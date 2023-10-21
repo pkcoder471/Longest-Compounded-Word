@@ -9,18 +9,25 @@
 # Overview
 
 n: no. of strings 
+<br>
 k: max(length of string)
-
+<br>
+<br>
 Time complexity:
-
-Best case-> O(k*k)
-Average Case-> O(n*k)
-Worst Case-> O(n*k*k)  
-
+<br>
+<br>
+Best case-> O($k^2$)
+<br>
+Average Case-> O(nk)
+<br>
+Worst Case-> O(n $k^2$)  
+<br>
 Space complexity: O(k)
+<br>
+<br>
 
->> To solve this problem dynamic programming data structure is used
->> To find the largest compounded word first i sort the strings with respect to their length and for equal lengths of strings, strings are sorted alphabetically
->> Now starting from the end of list of strings i try to find if current string can be made by smaller words or not
->> if yes then store the string in ans1 and same goes with second largest compounded word
->> if we get both the strings then we stop and print the output strings
+* To solve this problem dynamic programming data structure is used
+* To find the largest compounded word first i sort the strings with respect to their length and for equal lengths of strings, strings are sorted alphabetically
+* Now starting from the end of list of strings i try to find if current string can be made by smaller words or not
+* if yes then store the string in ans1 and same goes with second largest compounded word
+* if we get both the strings then we stop and print the output strings
